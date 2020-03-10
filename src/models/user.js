@@ -13,7 +13,7 @@ const userSchema = new mongoose.Schema({
         required: true,
         trim: true,
         validate(value) {
-            if (value.length === 3) {
+            if (value.length === 0) {
                 throw new Error("Password cannot be null");
             }
         }
